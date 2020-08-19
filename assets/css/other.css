@@ -1,0 +1,46 @@
+/*salmon*/
+aside .logo a::before {
+    border-top: 4px solid salmon;
+    border-left: 4px solid salmon;
+    border-radius: 5px;
+}
+
+aside .logo a::after {
+    border-bottom: 4px solid salmon;
+    border-right: 4px solid salmon;
+    border-radius: 5px;
+}
+
+.project .pr-filter button.active,
+.layanan .sr-item .sr-inside .sr-icon .fa,
+.tentang .isi-tentang .teks-tentang h3 span,
+.project .pr-item .pr-text .icon .fa,
+.contact .cont-info .icon .fa,
+aside ul li a:hover,
+aside ul li a.active,
+.zoom-box .zm-control .zm-next .fa,
+.zoom-box .zm-control .zm-prev .fa {
+    color: salmon;
+}
+
+.layanan .sr-item .sr-inside:hover .sr-icon,
+.tentang .isi-tentang .exp .dots,
+.tentang .isi-tentang .org .dots,
+aside .btn-toggle span,
+aside .btn-toggle span::before,
+aside .btn-toggle span::after,
+.section-title h2::before,
+.section-title h2::after,
+.btn,
+.tentang .isi-tentang .exp .exp-item::before,
+.tentang .isi-tentang .org .org-item::before,
+.tentang .isi-tentang .skill-info .journey .bar,
+.beranda .profile .sosmed a {
+    background-color: salmon;
+}
+
+.project .pr-filter button.active {
+    border-color: salmon;
+}
+
+/*salmon*/
