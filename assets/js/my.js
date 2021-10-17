@@ -1,12 +1,13 @@
 //data-filter function
 
+//ini variabel untuk fungsi pemilihan query
 const wrapFilter = document.querySelector(".pr-filter"),
     btnFilter = wrapFilter.children,
     btnCount = btnFilter.length,
     prItem = document.querySelectorAll(".pr-item"),
     projectCount = prItem.length;
 
-
+//ini fungsi untuk loop
 for (let i = 0; i < btnCount; i++) {
     btnFilter[i].addEventListener("click", function () {
         wrapFilter.querySelector(".active").classList.remove("active");
@@ -46,10 +47,12 @@ for (let i = 0; i < projectCount; i++) {
     })
 }
 
+//fungsi untuk zoom
 function showZoom() {
     zoomBox.classList.toggle("opened");
 }
 
+//fungsi untuk ganti item
 function changeItem() {
     imgSource = prItem[itemFirst].querySelector(".pr-img img").getAttribute("src");
     zoomboxIMG.src = imgSource;
