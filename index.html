@@ -507,30 +507,26 @@
                             <div class="row">
                                 <div class="field-item col-6">
                                     <div class="field-group">
-                                        <input type="text" name="name" class="form-control"
-                                            placeholder="fill your name . . .">
+                                        <input type="text" name="name" class="form-control" placeholder="fill your name . . .">
                                     </div>
                                 </div>
                                 <div class="field-item col-6 p15">
                                     <div class="field-group">
-                                        <input type="email" name="email" class="form-control"
-                                            placeholder="input your email . . .">
+                                        <input type="email" name="email" class="form-control" placeholder="input your email . . .">
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="field-item col-12">
                                     <div class="field-group">
-                                        <input type="text" name="name" class="form-control"
-                                            placeholder="your project subject . . .">
+                                        <input type="text" name="name" class="form-control" placeholder="your project subject . . .">
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="field-item col-12">
                                     <div class="field-group">
-                                        <textarea type="text" name="name" class="form-control"
-                                            placeholder="your project detail . . ."></textarea>
+                                        <textarea type="text" name="name" class="form-control" placeholder="your project detail . . ."></textarea>
                                     </div>
                                 </div>
                             </div>
@@ -575,6 +571,14 @@
             $('ul li a').click(function () {
                 $('li a').removeClass("active");
                 $(this).addClass("active");
+            });
+        });
+        $(document).scroll(function () {
+            $('section').each(function () {
+                if ($(this).position().top <= $(document).scrollTop() && ($(this).position().top + $(this).outerHeight()) > $(document).scrollTop()) {
+                    $('li a').removeClass("active");
+                    $('[href="#' + $(this).attr('id') + '"]').addClass('active');
+                }
             });
         });
     </script>
